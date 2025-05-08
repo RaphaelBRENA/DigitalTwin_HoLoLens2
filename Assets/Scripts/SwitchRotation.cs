@@ -1,10 +1,12 @@
 using UnityEngine;
 using MixedReality.Toolkit;
+using TMPro;
 
 public class SwitchRotation : MonoBehaviour
 {
     public Transform levier;
     private StatefulInteractable interactable;
+    public TextMeshProUGUI messageText;
 
     private bool isOn = false;
     private float animationDuration = 0.1f;
@@ -22,12 +24,14 @@ public class SwitchRotation : MonoBehaviour
             isOn = false;
             StopAllCoroutines();
             StartCoroutine(AnimateRotation(Quaternion.Euler(0, 0, -10)));
+            messageText.text = "Switch is OFF";
         }
         else
         {
             isOn = true;
             StopAllCoroutines();
             StartCoroutine(AnimateRotation(Quaternion.Euler(0, 0, 10)));
+            messageText.text = "Switch is ON";
         }
     }
 
