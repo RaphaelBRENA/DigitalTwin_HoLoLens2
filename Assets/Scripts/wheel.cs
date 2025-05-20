@@ -14,7 +14,8 @@ public class wheel : MonoBehaviour
     void Update()
     {
         if (!isActive) return;
-            Quaternion currentRotation = transform.rotation;
+
+        Quaternion currentRotation = transform.rotation;
         float angleY = currentRotation.y * 360f;
         messageText.text = angleY.ToString("F0") + "°";
     }
