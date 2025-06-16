@@ -868,10 +868,44 @@ PlayerSettings:
   syncCapabilities: 0
   platformCapabilities:
     WindowsStoreApps:
-      GazeInput: True
+      VideosLibrary: True
+      Location: True
+      HumanInterfaceDevice: True
+      Chat: True
+      Bluetooth: True
+      MusicLibrary: True
+      AllJoyn: True
+      PrivateNetworkClientServer: True
+      LowLevelDevices: True
+      InternetClientServer: True
+      OfflineMapsManagement: True
+      BackgroundMediaPlayback: True
+      Objects3D: True
+      RemoteSystem: True
+      BlockedChatMessages: True
+      PhoneCall: True
+      UserDataTasks: True
+      Appointments: True
+      SystemManagement: True
       SpatialPerception: True
-      WebCam: True
       Microphone: True
+      SharedUserCertificates: True
+      InputInjectionBrokered: True
+      PicturesLibrary: True
+      RemovableStorage: True
+      WebCam: True
+      VoipCall: True
+      GazeInput: True
+      UserAccountInformation: True
+      UserNotificationListener: True
+      PhoneCallHistoryPublic: True
+      PointOfService: True
+      RecordedCallsFolder: True
+      Contacts: True
+      Proximity: True
+      InternetClient: True
+      CodeGeneration: True
+      EnterpriseAuthentication: True
   metroTargetDeviceFamilies: {}
   metroFTAName: 
   metroFTAFileTypes: []

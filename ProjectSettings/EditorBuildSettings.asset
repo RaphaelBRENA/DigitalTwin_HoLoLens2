@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/UI.unity
+    guid: 0114bd2bcbc46c44083c53cb893e656d
+  - enabled: 1
+    path: Assets/Scenes/co2_reactor.unity
+    guid: 4fd6ae9763f800c4194e9e012f655075
+  - enabled: 0
+    path: Assets/Scenes/co2_reactor_ui.unity
+    guid: 1aed30f88927a4a4db235063f379f0a4
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 12b355ce4b6b32f42af0655ea6db78a4,
       type: 2}

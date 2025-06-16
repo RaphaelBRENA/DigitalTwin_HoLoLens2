@@ -6,7 +6,7 @@ public class RotationLimiter : MonoBehaviour
     [SerializeField] private Vector3 rotationAxis = Vector3.forward;
     [SerializeField] private float minAngle = -35f;
     [SerializeField] private float maxAngle = 35f;
-    public TextMeshProUGUI messageText;
+    public TextMeshPro messageText;
     private Quaternion initialRotation;
     private bool isActive = false;
 
@@ -19,12 +19,12 @@ public class RotationLimiter : MonoBehaviour
     {
         if (!isActive) return;
         Quaternion currentRotation = transform.rotation;
-        float angleZ = currentRotation.eulerAngles.z;
-        if (angleZ > 180f)
-        {
-            angleZ -= 360f;
-        }
-        messageText.text = angleZ.ToString("F0") + "°";
+        float angleZ = currentRotation.eulerAngles.y - 90;
+        //if (angleZ > 180f)
+        //{
+        //    angleZ -= 360f;
+        //}
+        messageText.text = "Lever Rotation: " + angleZ.ToString("F0") + "°";
         Quaternion delta = Quaternion.Inverse(initialRotation) * currentRotation;
 
         delta.ToAngleAxis(out float angle, out Vector3 axis);
