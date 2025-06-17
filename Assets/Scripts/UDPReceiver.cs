@@ -12,7 +12,6 @@ public class UDPReceiver : MonoBehaviour
     UdpClient client;
     int port = 9876;
     public TextMeshPro textMesh;
-    string temp = "Etape 1";
 
     Queue<string> messageQueue = new Queue<string>();
 
